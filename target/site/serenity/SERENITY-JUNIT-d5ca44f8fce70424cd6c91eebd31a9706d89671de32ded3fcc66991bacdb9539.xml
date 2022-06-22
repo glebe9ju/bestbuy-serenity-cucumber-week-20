@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="4" failures="1" name="Testing different services on the BestBuy application" skipped="0" tests="5" time="3.13" timestamp="2022-06-21T21:21:31.595+01:00[Europe/London]"><testcase name="Check if the Services application can be accessed by users"><error type="net.serenitybdd.core.exceptions.UnrecognisedException"/><system-err>null&#13;
+</system-err></testcase><testcase name="Check if user can create a new service in BesBuy application"><error type="net.serenitybdd.core.exceptions.UnrecognisedException"/><system-err>null&#13;
+</system-err></testcase><testcase name="Verify if the service was added to the application"><error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">Index: 0, Size: 0</error><system-err>Index: 0, Size: 0&#13;
+Script1.run(Script1.groovy:1)&#13;
+groovy.lang.GroovyShell.evaluate(GroovyShell.java:585)&#13;
+groovy.lang.GroovyShell.evaluate(GroovyShell.java:623)&#13;
+groovy.lang.GroovyShell.evaluate(GroovyShell.java:594)&#13;
+io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)&#13;
+io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)&#13;
+io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)&#13;
+io.restassured.path.json.JsonPath.get(JsonPath.java:202)&#13;
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)&#13;
+io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)&#13;
+api.bestbuy.bestbuyinfo.ServicesSteps.getServiceInfoByName(ServicesSteps.java:51)&#13;
+api.bestbuy.cucumber.steps.ServiceStepsDef.userSendsAGetRequestForANewlyCreatedServiceName(ServiceStepsDef.java:46)&#13;
+</system-err></testcase><testcase name="Update athe service information and verify the updated information"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+api.bestbuy.cucumber.steps.ServiceStepsDef.userSendsAPutRequestToUpdateARecordByServiceID(ServiceStepsDef.java:60)&#13;
+✽.When User sends a Put request to update a record by service ID(services.feature:16)&#13;
+</system-err></testcase><testcase name="Delete the service and verify if the service is deleted"><error message="Arity mismatch: Step Definition 'api.bestbuy.cucumber.steps.ServiceStepsDef.userSendsDeleteRequestToDeletByServicesIdAndGetAStatusCode() in file:/C:/Users/Hetal/IdeaProjects/bestbuy-serenity-cucumber-week-20/target/test-classes/' with pattern [^User sends Delete request to delet by services id and get a status code (\d+)$] is declared with 0 parameters. However, the gherkin step has 1 arguments [200]. &#10;Step: When User sends Delete request to delet by services id and get a status code 200" type="cucumber.runtime.CucumberException">Arity mismatch: Step Definition 'api.bestbuy.cucumber.steps.ServiceStepsDef.userSendsDeleteRequestToDeletByServicesIdAndGetAStatusCode() in file:/C:/Users/Hetal/IdeaProjects/bestbuy-serenity-cucumber-week-20/target/test-classes/' with pattern [^User sends Delete request to delet by services id and get a status code (\d+)$] is declared with 0 parameters. However, the gherkin step has 1 arguments [200]. 
+Step: When User sends Delete request to delet by services id and get a status code 200</error><system-err>Arity mismatch: Step Definition 'api.bestbuy.cucumber.steps.ServiceStepsDef.userSendsDeleteRequestToDeletByServicesIdAndGetAStatusCode() in file:/C:/Users/Hetal/IdeaProjects/bestbuy-serenity-cucumber-week-20/target/test-classes/' with pattern [^User sends Delete request to delet by services id and get a status code (\d+)$] is declared with 0 parameters. However, the gherkin step has 1 arguments [200]. 
+Step: When User sends Delete request to delet by services id and get a status code 200&#13;
+</system-err></testcase></testsuite>
